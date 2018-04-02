@@ -156,4 +156,18 @@ public class ChatServlet extends HttpServlet {
     // redirect to a GET request
     response.sendRedirect("/chat/" + conversationTitle);
   }
+  /**
+  * This function parses BBcode into HTML. Supports bolded, italicized, underlined, 
+  * strikethrough text.
+  */
+
+  public String parseBB(String bbcode) {
+    return bbcode.replace("[b]", "<b>").replace("[/b]", "</b>")
+      .replace("[i]", "<i>").replace("[/i]", "</i>")
+      .replace("[u]", "<u>").replace("[/u]", "</u>")
+      .replace("[s]", "<s>").replace("[/s]", "</s>");
+  }
 }
+
+
+
