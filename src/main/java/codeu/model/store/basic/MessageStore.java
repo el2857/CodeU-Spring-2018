@@ -108,10 +108,10 @@ public class MessageStore {
   }
 
   /** Adds all messages by the specified user into a list **/
-  public List<Message> getMessagesByUser(User username) {
+  public List<Message> getMessagesByUser(User user) {
       List<Message> messagesByUser = new ArrayList<>();
       for (Message message : messages) {
-          if (message.getAuthorId().equals(username.id)) {
+          if (message.getAuthorId().equals(user.id)) {
               messagesByUser.add(message);
           }
       }
