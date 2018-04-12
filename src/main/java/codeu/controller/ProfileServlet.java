@@ -100,30 +100,4 @@ public class ProfileServlet extends HttpServlet {
     request.setAttribute("messages", messages);
     //request.getRequestDispatcher("/WEB-INF/view/chat.jsp").forward(request, response);
   }
-
-  /**
-   * There should be no need for a doPost method, but I want to check before getting rid of it.
-   */
-  // @Override
-  // public void doPost(HttpServletRequest request, HttpServletResponse response)
-  //     throws IOException, ServletException {
-  //
-  //   // TODO: this is who I am, logged in
-  //   String username = (String) request.getSession().getAttribute("user");
-  //   if (username == null) {
-  //     // user is not logged in, don't let them add a message
-  //     response.sendRedirect("/login");
-  //     return;
-  //   }
-  //
-  //   User user = userStore.getUser(username);
-  //   if (user == null) {
-  //     // user was not found, don't let them add a message
-  //     response.sendRedirect("/login");
-  //     return;
-  //   }
-  //
-  //   String requestUrl = request.getRequestURI();
-  //   String conversationTitle = requestUrl.substring("/chat/".length());
-  // }
 }
