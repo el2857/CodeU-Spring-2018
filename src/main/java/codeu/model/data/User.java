@@ -53,7 +53,7 @@ public class User {
    * @param creation the creation time of this User
    */
   public User(UUID id, String name, String password, Instant creation) {
-    User(id, name, password, creation, "Hello! Welcome to my profile.");
+    this(id, name, password, creation, "Hello! Welcome to my profile.");
   }
 
   /** Returns the ID of this User. */
