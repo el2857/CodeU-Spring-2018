@@ -42,8 +42,8 @@ public class ProfileServlet extends HttpServlet {
   /** Tell whether the profile page is on the current logged in User. */
   private boolean current;
 
-  /** Set up state for handling chat requests. */
-  /** TODO: not sure if this is necessary? */
+  /** Set up state for handling profile pages. This includes gathering all
+  messages by a specific user and the userstore of all users. */
   @Override
   public void init() throws ServletException {
     super.init();
