@@ -23,6 +23,7 @@ public class User {
   private final String name;
   private final String password;
   private final Instant creation;
+  private final String aboutMe;
 
   /**
    * Constructs a new User.
@@ -31,12 +32,28 @@ public class User {
    * @param name the username of this User
    * @param password the password of this User
    * @param creation the creation time of this User
+   * @param aboutMe the about me description of this User
    */
-  public User(UUID id, String name, String password, Instant creation) {
+
+  public User(UUID id, String name, String password, Instant creation, String aboutMe) {
     this.id = id;
     this.name = name;
     this.password = password;
     this.creation = creation;
+    this.aboutMe = aboutMe;
+  }
+
+  /**
+   * Constructs a new User via constructor chaining in case the user does not
+   have an about me. This creates a default message.
+   *
+   * @param id the ID of this User
+   * @param name the username of this User
+   * @param password the password of this User
+   * @param creation the creation time of this User
+   */
+  public User(UUID id, String name, String password, Instant creation) {
+    this(id, name, password, creation, "Hello! Welcome to my profile.");
   }
 
   /** Returns the ID of this User. */
@@ -57,5 +74,10 @@ public class User {
   /** Returns the creation time of this User. */
   public Instant getCreationTime() {
     return creation;
+  }
+
+  /** Returns the about me of this User. */
+  public String getAboutMe() {
+      return aboutMe;
   }
 }
