@@ -67,11 +67,14 @@ public class LoginServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response)
       throws IOException, ServletException {
+    // username entered by user
     String username = request.getParameter("username");
+    // password entered by user
     String password = request.getParameter("password");
 
     if(userStore.isUserRegistered(username)) {
       User user = userStore.getUser(username);
+      // returns true if password matches
       if(BCrypt.checkpw(password, user.getPassword())) {
         request.getSession().setAttribute("user", username);
         response.sendRedirect("/conversations");
