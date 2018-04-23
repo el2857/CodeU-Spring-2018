@@ -84,3 +84,12 @@ App Engine devserver.
 - Bring the devserver back up by executing `mvn clean appengine:devserver`
 again.
 - Refresh your browser to see your changes!
+
+## Step 7: Update the live website.
+
+After you submit a pull request of your working code, you should update the live website.
+To update it, run the following command:
+```
+mvn appengine:update
+```
+Then, view the site here: [http://chat-it-up.appspot.com/](http://chat-it-up.appspot.com/).
