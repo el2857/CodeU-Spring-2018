@@ -92,4 +92,6 @@ To update it, run the following command:
 ```
 mvn appengine:update
 ```
+Note: When you run this the first time, it will load a webpage for you to login and give you a code. Copy the code and paste it to your command line.
+
 Then, view the site here: [http://chat-it-up.appspot.com/](http://chat-it-up.appspot.com/).
