@@ -45,6 +45,13 @@ nav a {
   width: 800px;
 }
 
+#banner {
+    background:url('https://pixabay.com/photo-152162/');
+    width:100%;
+    position:fixed; top:0; left:0;
+    min-height:189px;
+}
+
 h1 {
   color: #757575;
 }
