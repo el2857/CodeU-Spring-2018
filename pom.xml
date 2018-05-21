@@ -32,9 +32,11 @@
   </properties>
 
   <dependencies>
-   <groupId>org.mindrot</groupId>
-   <artifactId>jbcrypt</artifactId>
-   <version>0.4</version>
+    <dependency>
+       <groupId>org.mindrot</groupId>
+       <artifactId>jbcrypt</artifactId>
+       <version>0.4</version>
+    </dependency>
 
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -110,4 +112,3 @@
   </build>
 
 </project>
-

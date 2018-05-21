@@ -16,6 +16,7 @@ package codeu.model.store.basic;
 
 import codeu.model.data.Message;
 import codeu.model.store.persistence.PersistentStorageAgent;
+import codeu.model.data.User;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -105,5 +106,16 @@ public class MessageStore {
   /** Sets the List of Messages stored by this MessageStore. */
   public void setMessages(List<Message> messages) {
     this.messages = messages;
+  }
+
+  /** Adds all messages by the specified user into a list **/
+  public List<Message> getMessagesByUser(User user) {
+      List<Message> messagesByUser = new ArrayList<>();
+      for (Message message : messages) {
+          if (message.getAuthorId().equals(user.getId())) {
+              messagesByUser.add(message);
+          }
+      }
+      return messagesByUser;
   }
 }

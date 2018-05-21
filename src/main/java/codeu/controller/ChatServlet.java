@@ -142,13 +142,14 @@ public class ChatServlet extends HttpServlet {
 
     // this removes any HTML from the message content
     String cleanedMessageContent = Jsoup.clean(messageContent, Whitelist.none());
+    String htmlMessage = parseBB(cleanedMessageContent);
 
     Message message =
         new Message(
             UUID.randomUUID(),
             conversation.getId(),
             user.getId(),
-            cleanedMessageContent,
+            htmlMessage,
             Instant.now());
 
     messageStore.addMessage(message);
@@ -156,4 +157,18 @@ public class ChatServlet extends HttpServlet {
     // redirect to a GET request
     response.sendRedirect("/chat/" + conversationTitle);
   }
+  /**
+  * This function parses BBcode into HTML. Supports bolded, italicized, underlined, 
+  * strikethrough text.
+  */
+
+  public String parseBB(String bbcode) {
+    return bbcode.replace("[b]", "<b>").replace("[/b]", "</b>")
+      .replace("[i]", "<i>").replace("[/i]", "</i>")
+      .replace("[u]", "<u>").replace("[/u]", "</u>")
+      .replace("[s]", "<s>").replace("[/s]", "</s>");
+  }
 }
+
+
+
