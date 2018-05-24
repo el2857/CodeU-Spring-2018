@@ -25,23 +25,11 @@
 </head>
 <body>
 
-  <nav>
-    <a id="navTitle" href="/">Squeak Speak</a>
-   <a href="/conversations">Conversations</a>
-   <% if(request.getSession().getAttribute("user") != null){ %>
-     <a>Hello <%= request.getSession().getAttribute("user") %>!</a>
-   <% } else{ %>
-     <a href="/login">Login</a>
-     <a href="/register">Register</a>
-   <% } %>
-   <a href="/about.jsp">About</a>
-   <a href="/testdata">Load Test Data</a>
-  </nav>
-
+  <h1 style="text-align:center; margin-top: 60px;">Squeak Speak</h1>
   <div id="container">
     <div
       style="text-align:center; width:50%; float:left; margin-right:auto; margin-top: 50px;">
-      <h1>Send a squeak in a scurry!</h1>
+      <h4>Send a squeak in a scurry!</h4>
       <img src = "sample_chat.png"/>
     </div>
     <div
@@ -60,7 +48,7 @@
     </div>
   </div>
   <div
-    style="text-align:center; margin-top: 600px;">
+    style="text-align:center; margin-top: 500px;">
     <div><a href="/about.jsp">about</a></div>
     <div><a href="/testdata">load test data</a></div>
   </div>
