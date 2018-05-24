@@ -33,7 +33,8 @@
       <img src = "sample_chat.png"/>
     </div>
     <div
-      style="text-align:center; width:50%; float:right; margin-left:auto; margin-top: 200px;">
+      style="text-align:center; width:50%; float:right; margin-left:auto; margin-top: 50px;">
+      <img src = "mice_logo.png"/><br/>
       <form action="/login" method="POST">
       <label for="username">Username: </label>
       <input type="text" name="username" id="username">
