@@ -40,24 +40,29 @@
 
   <div id="container">
     <div
-      style="width:50%; float:left; margin-right:auto; margin-top: 50px;">
+      style="text-align:center; width:50%; float:left; margin-right:auto; margin-top: 50px;">
+      <h1>Send a squeak in a scurry!</h1>
       <img src = "sample_chat.png"/>
     </div>
     <div
-      style="width:50%; margin-left:auto; margin-top: 50px;">
-
-      <ul>
-        <li><a href="/login">Login</a> to get started.</li>
-        <!--btn-purple should be updated based on what's in main.css, 
-          display:block for each of the buttons-->
-        <li>Go to the <a class="btn btn-purple" href="/conversations">conversations</a> page to
-            create or join a conversation.</li>
-        <li>View the <a href="/about.jsp">about</a> page to learn more about the
-            project.</li>
-        <li>You can <a href="/testdata">load test data</a> to fill the site with
-            example data.</li>
-      </ul>
+      style="text-align:center; width:50%; float:right; margin-left:auto; margin-top: 200px;">
+      <form action="/login" method="POST">
+      <label for="username">Username: </label>
+      <input type="text" name="username" id="username">
+      <br/>
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password">
+      <br/><br/>
+      <a class="btn btn-primary" href="/login">Login</a>
+      </form>
+      <br/>
+      <a class="btn btn-primary" href="/register">Register</a>
     </div>
+  </div>
+  <div
+    style="text-align:center; margin-top: 600px;">
+    <div><a href="/about.jsp">about</a></div>
+    <div><a href="/testdata">load test data</a></div>
   </div>
 </body>
 </html>
