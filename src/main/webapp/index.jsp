@@ -40,14 +40,17 @@
 
   <div id="container">
     <div
-      style="width:75%; margin-left:auto; margin-right:auto; margin-top: 50px;">
-
-      <h1>CodeU Chat App: Squeak Speak</h1>
-      <h2>Welcome! We are Team 16, also known as The Mice!</h2>
+      style="width:50%; float:left; margin-right:auto; margin-top: 50px;">
+      <img src = "sample_chat.png"/>
+    </div>
+    <div
+      style="width:50%; margin-left:auto; margin-top: 50px;">
 
       <ul>
         <li><a href="/login">Login</a> to get started.</li>
-        <li>Go to the <a href="/conversations">conversations</a> page to
+        <!--btn-purple should be updated based on what's in main.css, 
+          display:block for each of the buttons-->
+        <li>Go to the <a class="btn btn-purple" href="/conversations">conversations</a> page to
             create or join a conversation.</li>
         <li>View the <a href="/about.jsp">about</a> page to learn more about the
             project.</li>
