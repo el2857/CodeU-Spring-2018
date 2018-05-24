@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
   <h1 style="text-align:center; margin-top: 60px;">Squeak Speak</h1>
   <div id="container">
     <div
