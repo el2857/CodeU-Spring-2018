@@ -19,8 +19,8 @@ body {
   line-height: 1.6;
   font-size: 18px;
   line-height: 1.6;
-  color: #444;
-  background-color: #eeeeee;
+  color: #5E00AD;
+  background-color: #ffffff;
 }
 
 nav {
@@ -43,6 +43,7 @@ nav a {
   margin-left: auto;
   margin-right: auto;
   width: 800px;
+  background-color: #ffffff;
 }
 
 #banner {
@@ -53,7 +54,11 @@ nav a {
 }
 
 h1 {
-  color: #757575;
+  color: #5E00AD;
+}
+
+h4 {
+  color: #5E00AD;
 }
 
 input {

@@ -24,37 +24,31 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
-  <nav>
-    <a id="navTitle" href="/">Squeak Speak</a>
-   <a href="/conversations">Conversations</a>
-   <% if(request.getSession().getAttribute("user") != null){ %>
-     <a>Hello <%= request.getSession().getAttribute("user") %>!</a>
-   <% } else{ %>
-     <a href="/login">Login</a>
-     <a href="/register">Register</a>
-   <% } %>
-   <a href="/about.jsp">About</a>
-   <a href="/testdata">Load Test Data</a>
-  </nav>
-
+  <h1 style="text-align:center; margin-top: 60px;">Squeak Speak</h1>
   <div id="container">
-    <div
-      style="width:75%; margin-left:auto; margin-right:auto; margin-top: 50px;">
-
-      <h1>CodeU Chat App: Squeak Speak</h1>
-      <h2>Welcome! We are Team 16, also known as The Mice!</h2>
-
-      <ul>
-        <li><a href="/login">Login</a> to get started.</li>
-        <li>Go to the <a href="/conversations">conversations</a> page to
-            create or join a conversation.</li>
-        <li>View the <a href="/about.jsp">about</a> page to learn more about the
-            project.</li>
-        <li>You can <a href="/testdata">load test data</a> to fill the site with
-            example data.</li>
-      </ul>
+    <div style="text-align:center; width:50%; float:left; margin-right:auto; margin-top: 60px;">
+      <h4>Send a squeak in a scurry!</h4>
+      <img src = "sample_chat.png"/>
     </div>
+    <div style="text-align:center; width:50%; float:right; margin-left:auto; margin-top: 60px;">
+      <img src = "mice_logo.png"/>
+      <br/><br/>
+      <form action="/login" method="POST">
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username">
+        <br/>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+        <br/><br/>
+        <a class="btn btn-primary" href="/login">Login</a>
+      </form>
+      <br/>
+      <a class="btn btn-primary" href="/register">Register</a>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 600px;">
+    <div><a href="/about.jsp">about</a></div>
+    <div><a href="/testdata">load test data</a></div>
   </div>
 </body>
 </html>
