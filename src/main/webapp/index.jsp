@@ -26,30 +26,27 @@
 <body>
   <h1 style="text-align:center; margin-top: 60px;">Squeak Speak</h1>
   <div id="container">
-    <div
-      style="text-align:center; width:50%; float:left; margin-right:auto; margin-top: 60px;">
+    <div style="text-align:center; width:50%; float:left; margin-right:auto; margin-top: 60px;">
       <h4>Send a squeak in a scurry!</h4>
       <img src = "sample_chat.png"/>
     </div>
-    <div
-      style="text-align:center; width:50%; float:right; margin-left:auto; margin-top: 60px;">
+    <div style="text-align:center; width:50%; float:right; margin-left:auto; margin-top: 60px;">
       <img src = "mice_logo.png"/>
       <br/><br/>
       <form action="/login" method="POST">
-      <label for="username">Username: </label>
-      <input type="text" name="username" id="username">
-      <br/>
-      <label for="password">Password: </label>
-      <input type="password" name="password" id="password">
-      <br/><br/>
-      <a class="btn btn-primary" href="/login">Login</a>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username">
+        <br/>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+        <br/><br/>
+        <a class="btn btn-primary" href="/login">Login</a>
       </form>
       <br/>
       <a class="btn btn-primary" href="/register">Register</a>
     </div>
   </div>
-  <div
-    style="text-align:center; margin-top: 600px;">
+  <div style="text-align:center; margin-top: 600px;">
     <div><a href="/about.jsp">about</a></div>
     <div><a href="/testdata">load test data</a></div>
   </div>
