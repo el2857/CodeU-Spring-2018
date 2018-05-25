@@ -17,6 +17,9 @@
 <body>
 
 <nav>
+  <div id="content">
+    <img src="mouse.png" class="ribbon"/>
+  </div>
   <a id="navTitle" href="/">Squeak Speak</a>
  <a href="/conversations">Conversations</a>
  <% if(request.getSession().getAttribute("user") != null){ %>

@@ -20,7 +20,7 @@ body {
   font-size: 18px;
   line-height: 1.6;
   color: #551A8B;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 nav {
@@ -50,6 +50,18 @@ nav a {
     width:100%;
     position:fixed; top:0; left:0;
     min-height:189px;
+}
+
+#topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 125px;
+    width: 125px;
+    background: url(TRbanner.gif) no-repeat;
+    text-indent: -999em;
+    text-decoration: none;
 }
 
 h1 {
