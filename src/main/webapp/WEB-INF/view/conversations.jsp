@@ -61,7 +61,7 @@
 
       <hr/>
     <% } %>
-
+    <br>
     <h1>Conversations</h1>
 
     <%
